@@ -1,0 +1,22 @@
+<template>
+    <lightning-tabset variant="scoped">
+        <lightning-tab key={tab1Label} label={tab1Label}>
+            <lightning-flow
+                flow-api-name={tab1FlowName}
+                onstatuschange={handleFlowStatusChange}
+            ></lightning-flow>
+        </lightning-tab>
+        <lightning-tab key={tab2Label} label={tab2Label}>
+            <lightning-flow
+                flow-api-name={tab2FlowName}
+                onstatuschange={handleFlowStatusChange}
+            ></lightning-flow>
+        </lightning-tab>
+        <lightning-tab key={tab3Label} label={tab3Label}>
+            <lightning-flow
+                flow-api-name={tab3FlowName}
+                onstatuschange={handleFlowStatusChange}
+            ></lightning-flow>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

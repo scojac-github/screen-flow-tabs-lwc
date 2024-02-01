@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata" fqn="TabsetScoped">
+    <apiVersion>53.0</apiVersion>
+    <isExposed>true</isExposed>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+        <target>lightning__HomePage</target>
+        <!-- Add any additional target configurations as needed -->
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <!-- Specify individual objects -->
+            <objects>
+                <object>Account</object>
+                <object>Contact</object>
+                <!-- Add other objects as needed, e.g., <object>Account</object> -->
+            </objects>
+            <!-- Properties for Tab 1 -->
+            <property name="tab1Label" type="String" label="Tab 1 Label" />
+            <property name="tab1FlowName" type="String" label="Tab 1 Flow API Name" />
+            
+            <!-- Properties for Tab 2 -->
+            <property name="tab2Label" type="String" label="Tab 2 Label" />
+            <property name="tab2FlowName" type="String" label="Tab 2 Flow API Name" />
+            
+            <!-- Properties for Tab 3 -->
+            <property name="tab3Label" type="String" label="Tab 3 Label" />
+            <property name="tab3FlowName" type="String" label="Tab 3 Flow API Name" />
+        </targetConfig>
+        <!-- Add any additional target configurations as needed -->
+    </targetConfigs>
+</LightningComponentBundle>
