@@ -5,28 +5,17 @@
     <targets>
         <target>lightning__AppPage</target>
         <target>lightning__RecordPage</target>
-        <target>lightning__HomePage</target>
+        <target>lightningCommunity__Page</target>
         <!-- Add any additional target configurations as needed -->
     </targets>
     <targetConfigs>
         <targetConfig targets="lightning__RecordPage">
-            <!-- Specify individual objects -->
             <objects>
                 <object>Account</object>
                 <object>Contact</object>
-                <!-- Add other objects as needed, e.g., <object>Account</object> -->
+                <object>Opportunity</object>
             </objects>
-            <!-- Properties for Tab 1 -->
-            <property name="tab1Label" type="String" label="Tab 1 Label" />
-            <property name="tab1FlowName" type="String" label="Tab 1 Flow API Name" />
-            
-            <!-- Properties for Tab 2 -->
-            <property name="tab2Label" type="String" label="Tab 2 Label" />
-            <property name="tab2FlowName" type="String" label="Tab 2 Flow API Name" />
-            
-            <!-- Properties for Tab 3 -->
-            <property name="tab3Label" type="String" label="Tab 3 Label" />
-            <property name="tab3FlowName" type="String" label="Tab 3 Flow API Name" />
+            <property name="tabsConfig" type="String" label="Tabs Configuration" />
         </targetConfig>
         <!-- Add any additional target configurations as needed -->
     </targetConfigs>
