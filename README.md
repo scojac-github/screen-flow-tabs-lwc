@@ -1,18 +1,16 @@
-# Salesforce DX Project: Next Steps
+# Overview
 
-Now that you’ve created a Salesforce DX project, what’s next? Here are some documentation resources to get you started.
+Component to display two or more Screen Flows in separate tabs on Lightning or Experience Cloud page.
 
-## How Do You Plan to Deploy Your Changes?
+# Use Case
 
-Do you want to deploy a set of changes, or create a self-contained application? Choose a [development model](https://developer.salesforce.com/tools/vscode/en/user-guide/development-models).
+Suppose you have two or more Screen Flows that are not dependent on each other but you want to display them on a single page in Salesforce rather than navigating to differnt pages or creating separate actions. With this LWC you can now add dynamically add these screen flows to a single page and separate them with tabs.
 
-## Configure Your Salesforce DX Project
+# How to use
 
-The `sfdx-project.json` file contains useful configuration information for your project. See [Salesforce DX Project Configuration](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_ws_config.htm) in the _Salesforce DX Developer Guide_ for details about this file.
+Simply add to a Lightning or Experience Cloud page and pass in a JSON string with corresponding tab labels and Flow API names.
 
-## Read All About It
+Example: 
 
-- [Salesforce Extensions Documentation](https://developer.salesforce.com/tools/vscode/)
-- [Salesforce CLI Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm)
-- [Salesforce DX Developer Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_intro.htm)
-- [Salesforce CLI Command Reference](https://developer.salesforce.com/docs/atlas.en-us.sfdx_cli_reference.meta/sfdx_cli_reference/cli_reference.htm)
+`[{"label": "Tab 1", "flowName": "Screen_Flow_One_API_Name"}, {"label": "Tab 2", "flowName": "Second_Flow_API_Name"}]`
+
